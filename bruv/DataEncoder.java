@@ -1,6 +1,5 @@
 package bruv;
 
-import java.nio.charset.StandardCharsets;
 import java.util.Arrays;
 
 public class DataEncoder {
@@ -124,7 +123,7 @@ public class DataEncoder {
             toEncode[i] = dataBytes[i] & 0xFF;
         }
 
-        new ReedSolomonEncoder(GenericGF.QR_CODE_FIELD_256).encode(toEncode, numEcBytesInBlock);
+        
 
         byte[] ecBytes = new byte[numEcBytesInBlock];
         for (int i = 0; i < numEcBytesInBlock; i++) {
