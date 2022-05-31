@@ -8,7 +8,7 @@ public class CreateQRCode {
         Quality quality = Quality.LEVEL_L;
 
         DataEncoder de = new DataEncoder();
-        de.encode(quality, CharacterEncoding.BYTE, "bruh");
+        de.encode(quality, CharacterEncoding.BYTE, "this is a test for the omegabytes 5727 scout qr code scanning system this took way too long please kill me now"); //this is what you make the qr code into 
 
         int[] dataBits = de.getMessage();
 
